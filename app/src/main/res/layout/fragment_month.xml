@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:background="@drawable/mylayout">
+
+        <Button
+            android:id="@+id/fm_leftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:textSize="10sp"
+            android:text="Previous"
+            android:background="@drawable/mybutton2"
+            />
+        <View
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/fm_Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:text="2018. 10."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+        <View
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/fm_rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:layout_marginLeft="3dp"
+            android:text="Next"
+            android:background="@drawable/mybutton2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/mylayout">
+
+        <TextView
+            android:id="@+id/fm_Sunday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            android:text="일요일"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+
+        <TextView
+            android:id="@+id/fm_Monday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="월요일"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+
+        <TextView
+            android:id="@+id/fm_Tuesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="화요일"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+
+        <TextView
+            android:id="@+id/fm_Wednesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="수요일"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+
+        <TextView
+            android:id="@+id/fm_Thursday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="목요일"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+
+        <TextView
+            android:id="@+id/fm_Friday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="금요일"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+
+        <TextView
+            android:id="@+id/fm_Saturday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#0000ff"
+            android:text="토요일"
+            android:gravity="center"
+            android:fontFamily="@font/myfont"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/month_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/gridview_monthly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:listSelector="@drawable/nopadding"
+            android:numColumns="7"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:background="@drawable/mylayout">
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>
